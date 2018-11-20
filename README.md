@@ -13,7 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. Then change to the newly created directory and run the following command to start the application. The start command creates a local development server to run the application.
 
 change directory
-### `cd website`
+### `cd test`
 
 run application in development environment
 ### `npm start`

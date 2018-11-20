@@ -48,10 +48,13 @@ install gh-pages package
 
 The “homepage” specifies the host path where you want to host the application. 
 The template for the URL is: 
-https://[your-user-name].github.io/[your-repo-name]/
-(eg. https://alinaamoskalenko.github.io/test/)
-“predeploy” specifies the command to build before deployment.
-“deploy” specifies which branch and directory to deploy.
+
+### https://[your-user-name].github.io/[your-repo-name]/
+
+### (eg. https://alinaamoskalenko.github.io/test/)
+
+### “predeploy” specifies the command to build before deployment.
+### “deploy” specifies which branch and directory to deploy.
 
 in the top file (after "private": true,)
 ### `"homepage": "https://alinaamoskalenko.github.io/test/"`

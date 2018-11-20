@@ -1,5 +1,72 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to create react app
+
+1. In the directory you can run:
+
+### `npm install -g create-react-app`
+
+2. In the next step you must create a new React app called, eg. “test”, using the command below.
+
+### `create-react-app test`
+
+3. Then change to the newly created directory and run the following command to start the application. The start command creates a local development server to run the application.
+
+change directory
+### `cd website`
+
+run application in development environment
+### `npm start`
+
+4. After checking that the application runs perfectly without any error, you can CREATE a NEW REPOSITORY on GitHub.
+
+5. The next step is to convert the local react project to a git repository.
+
+create a new git repository in you project directory
+### `git init`
+
+add all changed file paths to staged changes
+### `git add .`
+
+commit all staged changes
+### `git commit -m 'initial commit'`
+
+6. After that add the just created GitHub repository as the remote repository and push the code to it using the following commands. It create a default master branch and add all the code to it (eg.):
+
+add remote repository
+### `git remote add origin https://github.com/AlinaaMoskalenko/test.git`
+
+pushe local repository to remote repository on GitHub
+### `git push origin master`
+
+7. The next step is to install ‘gh-pages’ package using the following npm command:
+
+install gh-pages package
+### `npm install --save gh-pages`
+
+8. Then you need to modified the package.json file of the project by adding the following statements (the statements are highlighted):
+
+The “homepage” specifies the host path where you want to host the application. 
+The template for the URL is: 
+https://[your-user-name].github.io/[your-repo-name]/
+(eg. https://alinaamoskalenko.github.io/test/)
+“predeploy” specifies the command to build before deployment.
+“deploy” specifies which branch and directory to deploy.
+
+in the top file (after "private": true,)
+### `"homepage": "https://alinaamoskalenko.github.io/test/"`
+
+in "scripts":
+### `"predeploy": "npm run build",`
+### `"deploy": "gh-pages -d build",`
+
+9. The last step is to deploy the application using the following command:
+
+deploy application
+### `npm run deploy`
+
+10. Check your site on https://alinaamoskalenko.github.io/test/ (eg.)
+
 ## Available Scripts
 
 In the project directory, you can run:

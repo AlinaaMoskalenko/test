@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to create react app
 
-1. In the directory you can run:
+1. In the directory with your project (directory where you want create new project) you can run:
 
 ### `npm install -g create-react-app`
 
